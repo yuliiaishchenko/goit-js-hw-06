@@ -10,4 +10,4 @@ const categoryIt = liItem.forEach (el =>{
 
     console.log(`Category: ${categoryName}
     Elements: ${numberOfElement}`)
-})
+});
