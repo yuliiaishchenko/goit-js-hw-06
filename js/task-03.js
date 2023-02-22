@@ -12,3 +12,8 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const createNewElement = images.map((el) => '<li><img src=`${el.url}` alt="${el.alt}"></li>');
+console.log(createNewElement);
+const newEl = document.getElementsByClassName('gallery');
+newEl.insertAdjacentHTML('afterbegin', createNewElement.join(''));
