@@ -13,7 +13,9 @@ const images = [
   },
 ];
 
-const createNewElement = images.map((el) => '<li><img src=`${el.url}` alt="${el.alt}"></li>');
+
+const newEl = document.querySelector('.gallery');
+const createNewElement = images.map((el) => `<li class = "gallery_item"><img  class = "gallery_img" src="${el.url}" alt="${el.alt}"></li>`);
 console.log(createNewElement);
-const newEl = document.getElementsByClassName('gallery');
+
 newEl.insertAdjacentHTML('afterbegin', createNewElement.join(''));
