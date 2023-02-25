@@ -1,13 +1,4 @@
-// const inputEl = document.getElementById("validation-input");
 
-// inputEl.addEventListener("blur", handleInputBlur);
-
-// function handleInputBlur(value){
-  
-// inputEl.dataset.length === inputEl.value.length ? inputEl.classList.toggle("valid"):
-// inputEl.classList.toggle("invalid");
-
-// }
 
 const onInput = document.getElementById("validation-input");
 const inputValue = onInput.getAttribute('data-length');
